@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8"><!-- polskie znaki -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sass, czyli CSS profesjonalnie</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	
+	<!--Nagłówek-->
+				
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					
+	            	<div class="navbar-header">
+	                     <img src="//placehold.it/150x30" alt="">
+	                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                     </button>
+	                     
+					</div>
+				
+					<div class="collapse navbar-collapse" id="collapse-1">		
+						<ul class="nav navbar-nav nav-float">
+							<li><a href="#" class="home">Home</a></li>
+							<li><a href="#">Pages</a></li>
+							<li><a href="#">Feature</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+			
+		<!--Sekcja powitalna-->
+		
+		<section class="hero">
+			<div class="container">
+				<div class="slogan">
+						<h1>Here you can type<br/><span>your company<br/>slogan</span></h1>
+				</div>
+			</div>
+		</section>
+		
+		<!--Sekcja z trzema elementami w jednej linii-->
+		
+		<section class="elements">
+			<div class="container">
+				<div class="row"> 
+					<div class="col-4 col-md-4 col-m-4 col-s-12">
+						<i class="fa fa-search dark" aria-hidden="true"></i>
+						<h3>Research</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>	
+					<div class="col-4 col-md-4 col-m-4 col-s-12">
+						<i class="fa fa-laptop blue" aria-hidden="true"></i>
+						<h3 style="color: #00c7e8;">Fully customizable</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
+					</div>	
+					<div class="col-4 col-md-4 col-m-4 col-s-12">
+						<i class="fa fa-cogs dark" aria-hidden="true"></i>
+						<h3>Work and work</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>	
+				</div>	
+			</div>
+		</section>
+		
+		<!-- Sekcja z nagłówkiem i tekstem-->
+		
+		<section class="fworks">
+			<div class="container">
+				<div class="row">
+					<div class="col-offset-2 col-8 col-md-offset-0 col-md-12 col-m-offset-0 col-m-12  col-s-offset-0 col-s-12">
+						<h1>Feautured works</h1><br/>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--Sekcja z galerią zdjęć-->
+		
+		<section class="gallery"> 
+			<div class="row">
+				<div class="col-2 col-md-6 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/28597/pexels-photo-28597.jpg?h=350&auto=compress&cs=tinysrgb" alt=""><!--1-->
+				</div>
+				<div class="col-2 col-md-6 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/38637/car-audi-auto-automotive-38637.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""><!--2-->
+				</div>
+				<div class="col-2 col-md-6 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/168938/pexels-photo-168938.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""><!--3-->
+				</div>
+	 			<div class="col-2 col-m-6 col-md-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/112452/pexels-photo-112452.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""><!--4-->
+				</div>
+				<div class="col-4 col-md-offset-0 col-md-6 col-m-offset-0 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/26208/pexels-photo-26208.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""><!--5-->
+				</div>	
+				<div class="col-4 col-md-offset-0 col-md-6 col-m-offset-0 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/193999/pexels-photo-193999.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""><!--6-->
+		 		</div>
+				<div class="col-2 col-md-6 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/193998/pexels-photo-193998.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""><!--7-->
+				</div>
+				<div class="col-2 col-md-6 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/176026/pexels-photo-176026.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""><!--8-->
+				</div>
+				<div class="col-2 col-md-6 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/510699/pexels-photo-510699.jpeg?h=350&auto=compress&cs=tinysrgb" alt=""><!--9-->
+				</div>
+				<div class="col-2 col-md-6 col-m-6 col-s-12 image">
+					<div class="layer">
+						<i class="fa fa-camera-retro fa-lg"></i>
+						<i class="fa fa-search fa-lg"></i>
+					</div>
+					<img src="https://images.pexels.com/photos/248370/pexels-photo-248370.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt=""><!--10-->
+				</div>
+			</div>
+		</section>
+		
+		<!--Sekcja zespół-->
+		
+		<section class="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-3 col-md-6 col-m-6 col-s-12">
+						<div class="work">
+							<div class="layer">
+								<p>Founder</p>
+							</div>
+							<img src="https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="">
+							</div>	
+						<h4>Stefan Morrison</h4>				
+					</div>
+					<div class="col-3 col-md-6 col-m-6 col-s-12">
+						<div class="work">
+							<div class="layer">
+								<p>Founder</p>
+							</div>
+							<img src="https://images.pexels.com/photos/262391/pexels-photo-262391.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="">
+						</div>
+						<h4>Dexter Gilbert</h4>			
+					</div>  
+					<div class="col-3 col-md-6 col-m-6 col-s-12">
+						<div class="work">
+							<div class="layer">
+								<p>CEO</p>
+							</div>
+							<img src="https://t3.ftcdn.net/jpg/01/28/03/88/240_F_128038883_X7v2uUKzgeyGZdxC4mqNE4R02iJZVNds.jpg" alt="">
+						</div>
+						<h4>Mary Collier</h4>
+					</div>
+					<div class="col-3 col-md-6 col-m-6 col-s-12">
+						<div class="work">
+							<div class="layer">
+								<p>Vice President</p>
+							</div>
+							<img src="https://images.pexels.com/photos/228839/pexels-photo-228839.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="">
+						</div>
+						<h4>Bill Smith</h4>			
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--Sekcja promocyjna-->
+		
+		<section class="promotion">
+			<div class="row">
+				<div class="col-offset-1 col-3 col-md-offset-1 col-md-3 col-m-offset-0 col-m-12 col-s-offset-0 col-s-12 col-img">
+					<img src="https://images.pexels.com/photos/104836/speed-car-vehicle-drive-104836.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
+				</div>
+				<div class="col-8 col-md-8 col-m-12 col-s-12">
+					<div class="row">
+						<h2>Your awesome title</h2>
+					</div>
+					<div class="row">
+						<div class="col-6 col-md-6 col-m-6 col-s-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etm dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="col-4 col-md-4 col-m-6 col-s-12">
+							<p style="font-style:italic;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--Sekcja z liczbami-->
+		
+		<section class="figures">
+			<div class="container">
+				<div class="row">
+					<div class="col-offset-2 col-2 col-md-offset-0 col-md-3 col-m-offset-0 col-m-6  col-s-offset-0 col-s-12">
+						<h1>455</h1>
+						<h2>Followers</h2>
+					</div>
+					<div class="col-2 col-md-3 col-m-6 col-s-12">
+						<h1>1991</h1>
+						<h2>Since</h2>
+					</div>
+					<div class="col-2 col-md-3 col-m-6 col-s-12">
+						<h1>806</h1>
+						<h2>Happy Clients</h2>
+					</div>
+					<div class="col-2 col-md-3 col-m-6 col-s-12">
+						<h1>923</h1>
+						<h2>Projects</h2>
+					</div>
+						
+				</div>
+			</div>		
+		</section>
+		
+		<!--Stopka-->
+		
+		<footer>
+			<div class="container">
+		    	<div class="row">
+		    		<div class="f-about">
+		    			<div class="col-4 col-md-12 col-m-12 col-s-12">
+		                	<h2>About us</h2>
+		                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		            	</div>
+		            </div>
+		            <div class="f-get-in-touch">
+		            	<div class="col-4 col-md-12 col-m-12 col-s-12">
+		                	<h2>Get in touch</h2>
+		                	<div class="row">
+		                    	<div class="col-4 col-md-4 col-m-4 col-s-6 contact">
+		                    		<p>Adress:</p>
+		                    	</div>
+		                		<div class="col-8 col-md-8 col-m-8 col-s-6 ">
+		                			<p>66 South Street.<br>Window 6 Wonderland.</p>
+		                		</div>
+		                	</div>
+		                	<div class="row">
+		                    	<div class="col-4 col-md-4 col-m-4 col-s-6 contact">
+		                    		<p>Phone:</p>
+		                    	</div>
+		                    	<div class="col-8 col-md-8 col-m-8 col-s-6">
+		                    		<p>+440 875369208 - Office<br>+440 353363114 - Fax</p>
+		                    	</div>
+		                	</div>
+		                	<div class="row">
+		                    	<div class="col-4 col-md-4 col-m-4 col-s-6 contact">
+		                    		<p>Email:</p>
+		                    	</div>
+		                    	<div class="col-8 col-md-8 col-m-8 col-s-6">
+		                    		<p>freepik@sitename.com</p>
+		                    	</div>
+		                	</div>
+		            	</div>
+		            </div>
+		            <div class="f-social-media">
+		            	<div class="col-4 col-md-12 col-m-12 col-s-12">
+							<h2>Social media</h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<div class="social">
+								<button>	
+									<i class="fa fa-youtube-square" aria-hidden="true"></i>
+	    						</button>
+                				<button>	
+	    							<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+	    						</button>
+	    		                <button>	
+	    		                	<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								</button>
+	    	                	<button>	
+                               		<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+	    	                	</button>
+	    	                	<button>	
+	    		               		<i class="fa fa-twitter-square" aria-hidden="true"></i>
+	    		               	</button>
+                            	<button>	
+	    		                	<i class="fa fa-instagram" aria-hidden="true"></i>
+	    	                	</button>
+							</div>
+						</div> 
+					</div>
+					     
+		       	</div>
+		   	</div>
+			<section class="copy-r">
+				<div class="container">
+					<div class="row">
+    	        		<div class="col-12 col-md-12 col-m-12 col-s-12">
+               				<p>Copyrights 2017.</p>
+           				</div>
+           			</div>
+           		</div>
+			</section>
+		</footer>
+		
+	<!--Scripts-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
+
