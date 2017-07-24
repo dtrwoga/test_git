@@ -3,15 +3,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 	pkg: grunt.file.readJSON("package.json"),  	
-	watch: {
-    		scripts: {
-        		files: ['sass/*.sass'],
-        			tasks: ['sass'],
-        			options: {
-            			spawn: false,
-        		},
-    		}
-	},
 	sass: {
   		options: {
   			sourceMap: true
@@ -47,16 +38,26 @@ module.exports = function(grunt) {
 				}
                 	}
             	}
-        }
+        },
+	watch: {
+    		scripts: {
+        		files: ['sass/*.sass'],
+        			tasks: ['sass'],
+        			options: {
+            			spawn: false,
+        		},
+    		}
+	}
   });
   // Load the plugins tasks
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   
   
   // Default task(s)
 
-  grunt.registerTask('default', ['browserSync', 'watch', 'sass', 'imagemin']);
+  grunt.registerTask('default', ['browserSync', 'sass', 'imagemin', 'watch']);
  };
